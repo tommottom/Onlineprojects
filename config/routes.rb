@@ -54,8 +54,10 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   
-  root to: 'youtube#index'
+  root 'youtube#index'
+  
   
   post "/search" => "youtube#search"
+  
   
 end
